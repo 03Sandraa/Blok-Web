@@ -47,7 +47,8 @@ Homepage
 <img src="images/IMG_2807.PNG" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Productpage  
+Productpage 
+ 
 <img src="images/IMG_2808.PNG" width="375px" alt="omschrijving van de pagina">
  
 </details>
