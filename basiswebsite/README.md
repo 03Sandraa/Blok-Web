@@ -21,7 +21,7 @@ Sandra Heijnekamp
 #### Je startniveau:
 Voordat ik vorig jaar in aanraking kwam met het vak internetstandaarden, had ik nog helemaal geen ervaring met programmeren.
 Ik vond het leuk om mezelf erin te verdiepen. Het deed me een beetje denken aan wiskundige verbanden van de middelbare school.
-Mijn startniveau is tussen blauw en rood in, waarbij ik denk ik bij sommige onderdelen iets meer naar rood neig.
+Mijn startniveau is rood, waarbij ik denk ik bij sommige onderdelen nog wel neig naar de blauwe kant.
 Ik vind dat ik het programmeren vorig jaar best goed heb opgepikt. Ik heb alleen nog geen ervaring met hoe je een pagina helemaal responsive maakt.
 
 #### Je focus:
