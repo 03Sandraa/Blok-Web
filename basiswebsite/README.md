@@ -43,6 +43,7 @@ https://www.instant-gaming.com/en/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Homepage 
+ 
 <img src="images/IMG_2807.PNG" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
