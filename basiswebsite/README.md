@@ -19,7 +19,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Sandra Heijnekamp
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
 Voordat ik vorig jaar in aanraking kwam met het vak internetstandaarden, had ik nog helemaal geen ervaring met programmeren.
 Ik vond het leuk om mezelf erin te verdiepen. Het deed me een beetje denken aan wiskundige verbanden van de middelbare school.
 Mijn startniveau is tussen blauw en rood in, waarbij ik denk ik bij sommige onderdelen iets meer naar rood neig.
