@@ -1,5 +1,123 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+:root{
+  --MerkColorOrange: #ff5400;
+  --HeaderBackgroundColor: #000000;
+  --Textcolorwhite: white;
+  --MenuBackgroundColor: rgba(0, 0, 0, 0.5);
+  --MenuBackgroundColorHover: rgba(0, 0, 0, 0.3);
 }
 
+*, *::after, *::before {
+  box-sizing:border-box;  
+  margin: 0;
+  padding: 0;  
+}
+
+body{
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  height: 200vh;
+  background-color: yellowgreen;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/* ------ Styling header ------ */
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--HeaderBackgroundColor);
+}
+
+
+
+.gebruikersmenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 4.5em;
+  right: 1.3em;
+}
+
+.gebruikersmenu div{
+  background-color: var(--HeaderBackgroundColor);
+}
+
+.gebruikersmenu ul{
+  background-color: var(--MenuBackgroundColor);
+  border-radius: 5%;
+  backdrop-filter: blur(10px);
+  padding: 1em;
+}
+
+.gebruikersmenu ul li{
+  width: 16em;
+}
+
+.gebruikersmenu ul li a:not(.gebruikersmenu ul li:first-of-type a){
+  display: flex;
+  align-items: center;
+
+  height: 2.5em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-radius: 15px;
+
+  color: var(--Textcolorwhite);
+}
+
+.gebruikersmenu ul li a:hover:not(.gebruikersmenu ul li:first-of-type a){
+  background-color: var(--MenuBackgroundColorHover);
+}
+
+.gebruikersmenu ul li a img:not(.gebruikersmenu ul li:first-of-type img){
+  margin: 0 0.7em 0 0;
+  width: 1.3em;
+  height: 100%;
+}
+
+.gebruikersmenu ul li a span{
+  margin-left: auto;
+  background-color: var(--MenuBackgroundColorHover);
+  padding: 0.35em 0.6em;
+  border-radius: 42%;
+}
+
+img[src="images/avatar.png"]{
+  width: 3.8em;
+  border-radius: 100%;
+  margin-left: calc(50% - 1.9em);
+}
+
+img[src="images/hamburgermenu.svg"]{
+  position: fixed;
+  z-index: 15;
+  top: 1.5em;
+  right: 1.7em;
+  width: 2em;
+}
+
+img[src="images/logo7.webp"]{
+  width: 7.5em;
+  height: 100%;
+  margin: 1.2em 0;
+}
+
+/* ------ End styling header ------ */
+
+/* ------ Styling other ------ */
+
+.hidden{
+  display: none;
+}
+
+/* ------ Styling other ------ */
