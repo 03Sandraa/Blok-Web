@@ -5,6 +5,7 @@
   --Textcolorwhite: white;
   --MenuBackgroundColor: rgba(0, 0, 0, 0.5);
   --MenuBackgroundColorHover: rgba(0, 0, 0, 0.3);
+  --BodyBackgroundColor: #eeeeee;
 }
 
 *, *::after, *::before {
@@ -17,7 +18,7 @@ body{
   font-family: arial,sans-serif;
   font-size: 13px;
   height: 200vh;
-  background-color: yellowgreen;
+  background-color: var(--BodyBackgroundColor);
 }
 
 a{
@@ -34,29 +35,42 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: var(--HeaderBackgroundColor);
 }
 
+img[src="images/logo7.webp"]{
+  width: 7.7em;
+  height: 100%;
+  margin: 1.2em 0;
+}
 
+/* ------ Styling gebruikersmenu ------ */
 
 .gebruikersmenu{
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 4.5em;
   right: 1.3em;
+  z-index: 15;
 }
 
 .gebruikersmenu div{
+  position: fixed;
   background-color: var(--HeaderBackgroundColor);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  z-index: 15;
+  top: 0.4em;
+  right: 0.8em;
 }
 
 .gebruikersmenu ul{
   background-color: var(--MenuBackgroundColor);
   border-radius: 5%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(25px);
   padding: 1em;
 }
 
@@ -106,13 +120,353 @@ img[src="images/hamburgermenu.svg"]{
   width: 2em;
 }
 
-img[src="images/logo7.webp"]{
-  width: 7.5em;
-  height: 100%;
-  margin: 1.2em 0;
+/* ------ End styling gebruikersmenu ------ */
+
+/* ------ Styling search bar ------ */
+
+header form{
+  position: relative;
+  background-color: rgb(64, 21, 0);
+  border-radius: 75px;
+  width: 85%;
+
 }
 
+header form input{
+  background-color: transparent;
+  border: none;
+  height: 3.3em;
+  width: 100%;
+  padding: 1.5em;
+  color: var(--MerkColorOrange);
+}
+
+header form input::placeholder{
+  color: var(--MerkColorOrange);
+}
+
+header form input:focus{
+  outline: none;
+}
+
+header form button{
+  position: absolute;
+  top:0.25em;
+  right: 0.25em;
+  background-color: var(--MerkColorOrange);
+  padding: 0.6em;
+  border: none;
+  border-radius: 100%;
+}
+
+header form button img{
+  width: 1.4em;
+  height: 1.4em;
+}
+
+/* ------ End styling search bar ------ */
+
+/* ------ Styling nav besturingssysteem ------ */
+
+.navBesturingssysteem ul{
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin: 1em 0 2em 0;
+}
+
+.navBesturingssysteem ul li{
+  display: flex;
+  justify-content: center;
+}
+
+.navBesturingssysteem > ul > li > img:not(img[src="images/headericons/arrow_down.svg"]) {
+  width: 22px;
+  height: 20px;
+}
+
+img[src="images/headericons/arrow_down.svg"]{
+  width: 12px;
+  margin-left: 5px;
+}
+
+.navComputer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  background-color: var(--MenuBackgroundColor);
+  border-radius: 10px;
+  backdrop-filter: blur(25px);
+  padding: 1em;
+  color: var(--Textcolorwhite);
+  max-width: 380px;
+  margin: auto;
+  z-index: 15;
+}
+
+.navComputer a{
+  color: var(--Textcolorwhite);
+  font-size: 13px;
+  word-wrap: break-word;
+}
+
+.navComputer h2{
+  font-size: 13px;
+}
+
+.navComputer > h2{
+  width: 100%;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  background-color: var(--MenuBackgroundColorHover);
+}
+
+.navComputer > div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--MenuBackgroundColorHover);
+  align-items: center;
+  padding: 0.7em 1em;
+  border-radius: 10px;
+}
+
+.navComputer ul:first-of-type{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 230px;
+}
+
+.navComputer ul:first-of-type li{
+  margin: 0.8em 2.5em 0 0.8em;
+  align-self: flex-start;
+}
+
+.navComputer ul:first-of-type li a{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.navComputer ul:first-of-type li div{
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  width: 35px;
+  height: 35px;
+  padding: 1em;
+  border-radius: 100%;
+  margin-right: 0.7em;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(2) div{
+  background-color: #ff5500;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(3) div{
+  background-color: #f6ac33;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(4) div{
+  background-color: #0078f2;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(5) div{
+  background-color: white;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(6) div{
+  background-color: #00a2ff;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(7) div{
+  background-color: #2e64ca;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(8) div{
+  background-color: #ae00ff;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(9) div{
+  background-color: #484848;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(1) div img{
+  width: 40px;
+  position: absolute;
+  top: 3px;
+  left: -8px;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(2) div img, .navComputer ul:first-of-type li:nth-of-type(4) div img, .navComputer ul:first-of-type li:nth-of-type(5) div img, .navComputer ul:first-of-type li:nth-of-type(6) div img, .navComputer ul:first-of-type li:nth-of-type(7) div img{
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(3) div img{
+  width: 25px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(8) div img{
+  width: 25px;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+.navComputer ul:first-of-type li:nth-of-type(9) div img{
+  width: 17px;
+  position: absolute;
+  top: 8px;
+  left: 9px;
+}
+
+.navComputer ul:nth-of-type(2){
+  width: 100%;
+}
+
+.navComputer ul:nth-of-type(2) ul{
+  justify-content: space-between;
+}
+
+.navComputer ul:nth-of-type(2) li a{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  margin: 1em 0.5em;
+  text-align: center;
+}
+
+.navComputer ul:nth-of-type(2) li img{
+  width: 40px;
+}
+
+.navComputer ul:nth-of-type(3){
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navComputer ul:nth-of-type(3) a{
+  margin: 1em 0 0 1.8em;
+}
+
+.navComputer > a{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 0.9em 0;
+  width: 45%;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: 1em;
+}
+
+
+/* ------ End tyling nav besturingssysteem ------ */
+
 /* ------ End styling header ------ */
+
+/* ------ Styling main ------ */
+
+main{
+  transform: translateY(-1em);
+}
+
+main h2{
+  font-size: 15px;
+}
+
+.homePage > section:nth-of-type(1){
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
+  width: 130%;
+  transform: translateX(-12%);
+}
+
+.homePage section:nth-of-type(2) > div{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 95%;
+  margin: 1em auto;
+}
+
+.homePage section:nth-of-type(2) > div a{
+  padding: 0.4em 0.7em;
+  border: solid 1px #767676;
+  border-radius: 15px;
+  color: #767676;
+}
+
+.homePage section:nth-of-type(2) ol{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 1.5em;
+  grid-column-gap: 0.7em;
+  grid-template-columns:repeat(auto-fit, minmax(8em, 1fr));
+  width: 95%;
+  margin: auto;
+}
+
+.homePage section:nth-of-type(2) ol li{
+  position: relative;
+  border-radius: 10px;
+  color: var(--Textcolorwhite);
+  width: 100%;
+  box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
+}
+
+.homePage section:nth-of-type(2) ol li a{
+  color: var(--Textcolorwhite);
+}
+
+.homePage section:nth-of-type(2) ol li span:nth-of-type(1){
+  position: absolute;
+  bottom: -1%;
+  left: -3%;
+  background-color: var(--MerkColorOrange);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.homePage section:nth-of-type(2) ol li span:nth-of-type(2){
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+}
+
+.homePage section:nth-of-type(2) img[src="images/PlatformIcons/Steam-Emblem.png"]{
+  position: absolute;
+  width: 50px;
+  top: 3%;
+  right: -5%;
+}
+
+.homePage section:nth-of-type(2) img[src="images/content/life-is-strange-true-colors-pc-spel-steam-cover.jpg"]{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ------ End styling main ------ */
 
 /* ------ Styling other ------ */
 
