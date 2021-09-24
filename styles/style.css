@@ -520,3 +520,88 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
 }
 
 /* ------ Styling other ------ */
+
+/* ------ Responsive ------ */
+
+@media (max-width: 348px){
+  .homePage section:nth-of-type(2) ol li:nth-of-type(7), .homePage section:nth-of-type(2) ol li:nth-of-type(8), .homePage section:nth-of-type(2) ol li:nth-of-type(9), .homePage section:nth-of-type(2) ol li:nth-of-type(10){
+    display: none;
+  }
+}
+
+@media (min-width: 450px) {
+  .homePage section:nth-of-type(2) ol{
+    grid-template-columns:repeat(auto-fit, minmax(10.5em, 1fr));
+  }
+}
+
+@media (min-width: 500px){
+  .navBesturingssysteem ul{
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 15px;
+  }
+
+  .navBesturingssysteem ul li:not(.navBesturingssysteem ul li:last-of-type){
+    margin: 0 2em 0 0;
+  }
+
+  .navBesturingssysteem ul li span{
+    display: block;
+    color: var(--Textcolorwhite);
+    margin: 0 0.3em 0 0.8em;
+  }
+
+  img[src="images/headericons/arrow_down.svg"]{
+    opacity: 50%;
+  }
+}
+
+@media (min-width: 600px){
+  .homePage section:nth-of-type(2) ol li:nth-of-type(9){
+    display: none;
+  }
+  img[src="images/logo7.webp"]{
+    width: 10em;
+  }
+}
+
+@media (min-width: 700px){
+  header{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navBesturingssysteem{
+    width: 700px;
+  }
+  header form{
+    width: 31em;
+    margin: 0 3em 0 0;
+  }
+  img[src="images/logo7.webp"]{
+    margin: 1.2em 5em 1.2em 3em;
+    justify-self: flex-start;
+  }
+}
+
+@media (min-width: 750px) {
+  .homePage section:nth-of-type(2) ol{
+    grid-template-columns:repeat(auto-fit, minmax(13em, 1fr));
+  }
+}
+
+@media (min-width: 850px) {
+  .homePage section:nth-of-type(2) ol{
+    grid-template-columns:repeat(auto-fit, minmax(12em, 1fr));
+    grid-column-gap: 1.5em;
+  }
+}
+
+@media (min-width: 904px) {
+  .homePage section:nth-of-type(2) ol li:last-of-type, .homePage section:nth-of-type(2) ol li:nth-of-type(9){
+    display: block;
+  }
+}
+
+/* ------ End responsive ------ */
