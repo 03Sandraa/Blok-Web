@@ -466,6 +466,51 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   border-radius: 10px;
 }
 
+/* ------ Styling Trustpilot ------ */
+
+.trustpilotwaardering {
+  width: 95%;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
+}
+
+.trustpilotwaardering a{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.trustpilotwaardering p:first-of-type{
+  font-size: 1.6em;
+  margin: 0 0.8em 0.5em 0;
+}
+.trustpilotwaardering p span{
+  text-decoration: underline;
+}
+
+.trustpilotwaardering img[src="images/trustpilot-stars.svg"]{
+  width: 10em;
+  margin: 0 0 0.5em 0;
+}
+
+.trustpilotwaardering img[src="images/trustpilot-logo.svg"]{
+  width: 6em;
+  margin: 0 0 0 0.4em;
+}
+
+/* ------ End styling Trustpilot ------ */
+
+/* ------ Styling User feedback ------ */
+
+
+
+/* ------ End styling User feedback ------ */
+
 /* ------ End styling main ------ */
 
 /* ------ Styling other ------ */
