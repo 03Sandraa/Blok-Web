@@ -1,14 +1,14 @@
 // JavaScript Document
 const buttonHamburgermenuGebruikers = document.querySelector(".hamburger");
 const Gebruikersmenu = document.querySelector(".gebruikersmenu ul"); 
-const ButtonNavComputer = document.querySelector(".ButtonNavComputer");
-const NavComputer = document.querySelector(".navComputer");
-const ButtonPlaystation = document.querySelector(".ButtonPlaystation");
-const NavPlaystation = document.querySelector(".navPlaystation");
-const ButtonNavXbox = document.querySelector(".ButtonNavXbox");
-const NavXbox = document.querySelector(".navXbox");
-const ButtonNavNintendo = document.querySelector(".ButtonNavNintendo");
-const NavNintendo = document.querySelector(".navNintendo");
+const ButtonNavComputer = document.querySelector(".NavComputer");
+const NavComputer = document.querySelector(".NavComputer nav");
+const ButtonPlaystation = document.querySelector(".NavPlaystation");
+const NavPlaystation = document.querySelector(".NavPlaystation nav");
+const ButtonNavXbox = document.querySelector(".NavXbox");
+const NavXbox = document.querySelector(".NavXbox nav");
+const ButtonNavNintendo = document.querySelector(".NavNintendo");
+const NavNintendo = document.querySelector(".NavNintendo nav");
 
 buttonHamburgermenuGebruikers.addEventListener("click",openGebruikersmenu);
 ButtonNavComputer.addEventListener("click",openPCmenu);

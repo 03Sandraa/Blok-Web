@@ -238,8 +238,10 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. voor het specifiek omrekenen van px naar em https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+2. Als geheugensteun https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+3. Als geheugensteun https://webplatform.github.io/docs/guides/advanced_selectors_guide/
+4. Om hulp gevraagd bij het afbreken van de text met puntjes https://stackoverflow.com/questions/486563/overflowhidden-dots-at-the-end
+
 
 </details>

@@ -6,6 +6,7 @@
   --MenuBackgroundColor: rgba(0, 0, 0, 0.5);
   --MenuBackgroundColorHover: rgba(0, 0, 0, 0.3);
   --BodyBackgroundColor: #eeeeee;
+  --FooterBackgroundColor: #002c67;
 }
 
 *, *::after, *::before {
@@ -17,7 +18,6 @@
 body{
   font-family: arial,sans-serif;
   font-size: 13px;
-  height: 200vh;
   background-color: var(--BodyBackgroundColor);
 }
 
@@ -56,12 +56,13 @@ img[src="images/logo7.webp"]{
   z-index: 15;
 }
 
-.gebruikersmenu div{
+.gebruikersmenu button{
   position: fixed;
   background-color: var(--HeaderBackgroundColor);
+  border: none;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 3.85em;
+  height: 3.85em;
   z-index: 15;
   top: 0.4em;
   right: 0.8em;
@@ -171,7 +172,7 @@ header form button img{
 .navBesturingssysteem ul{
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  width: 16.92em;
   margin: 1em 0 2em 0;
 }
 
@@ -181,20 +182,21 @@ header form button img{
 }
 
 .navBesturingssysteem > ul > li > img:not(img[src="images/headericons/arrow_down.svg"]) {
-  width: 22px;
-  height: 20px;
+  width: 1.69em;
+  height: 1.54em;
 }
 
 img[src="images/headericons/arrow_down.svg"]{
-  width: 12px;
-  margin-left: 5px;
+  width: 0.92em;
+  margin-left: 0.38em;
+}
+.NavComputer{
+  background-color: var(--HeaderBackgroundColor);
 }
 
-.navComputer{
-  display: flex;
-  flex-direction: column;
+.NavComputer nav{
   position: absolute;
-  top: 150px;
+  top: 11.54em;
   left: 0;
   right: 0;
   background-color: var(--MenuBackgroundColor);
@@ -202,29 +204,29 @@ img[src="images/headericons/arrow_down.svg"]{
   backdrop-filter: blur(25px);
   padding: 1em;
   color: var(--Textcolorwhite);
-  max-width: 380px;
+  max-width: 29.23em;
   margin: auto;
   z-index: 15;
 }
 
-.navComputer a{
+.NavComputer nav a{
   color: var(--Textcolorwhite);
-  font-size: 13px;
+  font-size: 1em;
   word-wrap: break-word;
 }
 
-.navComputer h2{
-  font-size: 13px;
+.NavComputer nav h2{
+  font-size: 1em;
 }
 
-.navComputer > h2{
+.NavComputer > nav > h2{
   width: 100%;
   padding: 0.7em 1em;
   border-radius: 10px;
   background-color: var(--MenuBackgroundColorHover);
 }
 
-.navComputer > div{
+.NavComputer > nav > div{
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -234,136 +236,136 @@ img[src="images/headericons/arrow_down.svg"]{
   border-radius: 10px;
 }
 
-.navComputer ul:first-of-type{
+.NavComputer nav ul:first-of-type{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 230px;
+  height: 17.69em;
 }
 
-.navComputer ul:first-of-type li{
+.NavComputer nav ul:first-of-type li{
   margin: 0.8em 2.5em 0 0.8em;
   align-self: flex-start;
 }
 
-.navComputer ul:first-of-type li a{
+.NavComputer nav ul:first-of-type li a{
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.92em;
 }
 
-.navComputer ul:first-of-type li div{
+.NavComputer nav ul:first-of-type li div{
   position: relative;
   overflow: hidden;
   background-color: black;
-  width: 35px;
-  height: 35px;
+  width: 2.69em;
+  height: 2.69em;
   padding: 1em;
   border-radius: 100%;
   margin-right: 0.7em;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(2) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(2) div{
   background-color: #ff5500;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(3) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(3) div{
   background-color: #f6ac33;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(4) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(4) div{
   background-color: #0078f2;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(5) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(5) div{
   background-color: white;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(6) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(6) div{
   background-color: #00a2ff;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(7) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(7) div{
   background-color: #2e64ca;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(8) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(8) div{
   background-color: #ae00ff;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(9) div{
+.NavComputer nav ul:first-of-type li:nth-of-type(9) div{
   background-color: #484848;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(1) div img{
-  width: 40px;
+.NavComputer nav ul:first-of-type li:nth-of-type(1) div img{
+  width: 3.08em;
   position: absolute;
-  top: 3px;
-  left: -8px;
+  top: 0.23em;
+  left: -0.62em;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(2) div img, .navComputer ul:first-of-type li:nth-of-type(4) div img, .navComputer ul:first-of-type li:nth-of-type(5) div img, .navComputer ul:first-of-type li:nth-of-type(6) div img, .navComputer ul:first-of-type li:nth-of-type(7) div img{
-  width: 25px;
+.NavComputer nav ul:first-of-type li:nth-of-type(2) div img, .NavComputer nav ul:first-of-type li:nth-of-type(4) div img, .NavComputer nav ul:first-of-type li:nth-of-type(5) div img, .NavComputer nav ul:first-of-type li:nth-of-type(6) div img, .NavComputer nav ul:first-of-type li:nth-of-type(7) div img{
+  width: 1.92em;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 0.38em;
+  left: 0.38em;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(3) div img{
-  width: 25px;
+.NavComputer nav ul:first-of-type li:nth-of-type(3) div img{
+  width: 1.92em;
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 0.46em;
+  left: 0.46em;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(8) div img{
-  width: 25px;
+.NavComputer nav ul:first-of-type li:nth-of-type(8) div img{
+  width: 1.92em;
   position: absolute;
-  top: 6px;
-  left: 5px;
+  top: 0.46em;
+  left: 0.38em;
 }
 
-.navComputer ul:first-of-type li:nth-of-type(9) div img{
+.NavComputer nav ul:first-of-type li:nth-of-type(9) div img{
   width: 17px;
   position: absolute;
-  top: 8px;
-  left: 9px;
+  top: 0.62em;
+  left: 0.69em;
 }
 
-.navComputer ul:nth-of-type(2){
+.NavComputer nav ul:nth-of-type(2){
   width: 100%;
 }
 
-.navComputer ul:nth-of-type(2) ul{
+.NavComputer nav ul:nth-of-type(2) ul{
   justify-content: space-between;
 }
 
-.navComputer ul:nth-of-type(2) li a{
+.NavComputer nav ul:nth-of-type(2) li a{
   display: flex;
   justify-content: center;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 5.77em;
   margin: 1em 0.5em;
   text-align: center;
 }
 
-.navComputer ul:nth-of-type(2) li img{
-  width: 40px;
+.NavComputer nav ul:nth-of-type(2) li img{
+  width: 3.08em;
 }
 
-.navComputer ul:nth-of-type(3){
+.NavComputer nav ul:nth-of-type(3){
   flex-direction: column;
   align-items: flex-start;
 }
 
-.navComputer ul:nth-of-type(3) a{
+.NavComputer nav ul:nth-of-type(3) a{
   margin: 1em 0 0 1.8em;
 }
 
-.navComputer > a{
+.NavComputer > nav > a{
   display: flex;
   justify-content: center;
   background-color: black;
@@ -383,10 +385,14 @@ img[src="images/headericons/arrow_down.svg"]{
 
 main{
   transform: translateY(-1em);
+  max-width: 78.77em;
+  margin: auto;
+  background-color: var(--BodyBackgroundColor);
+  border-radius: 10px;
 }
 
 main h2{
-  font-size: 15px;
+  font-size: 1.15em;
 }
 
 .homePage > section:nth-of-type(1){
@@ -401,7 +407,7 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   transform: translateX(-12%);
 }
 
-.homePage section:nth-of-type(2) > div{
+.homePage section:nth-of-type(2) > div, .homePage section:nth-of-type(4) > div{
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -409,7 +415,7 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   margin: 1em auto;
 }
 
-.homePage section:nth-of-type(2) > div a{
+.homePage section:nth-of-type(2) > div a, .homePage section:nth-of-type(4) > div a{
   padding: 0.4em 0.7em;
   border: solid 1px #767676;
   border-radius: 15px;
@@ -468,7 +474,7 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
 
 /* ------ Styling Trustpilot ------ */
 
-.trustpilotwaardering {
+.homePage section:nth-of-type(3) {
   width: 95%;
   margin: 2em auto;
   padding: 1.5em;
@@ -477,7 +483,7 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
 }
 
-.trustpilotwaardering a{
+.homePage section:nth-of-type(3) a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -485,20 +491,20 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   color: #000000;
 }
 
-.trustpilotwaardering p:first-of-type{
+.homePage section:nth-of-type(3) p:first-of-type{
   font-size: 1.6em;
   margin: 0 0.8em 0.5em 0;
 }
-.trustpilotwaardering p span{
+.homePage section:nth-of-type(3) p span{
   text-decoration: underline;
 }
 
-.trustpilotwaardering img[src="images/trustpilot-stars.svg"]{
+.homePage section:nth-of-type(3) img[src="images/trustpilot-stars.svg"]{
   width: 10em;
   margin: 0 0 0.5em 0;
 }
 
-.trustpilotwaardering img[src="images/trustpilot-logo.svg"]{
+.homePage section:nth-of-type(3) img[src="images/trustpilot-logo.svg"]{
   width: 6em;
   margin: 0 0 0 0.4em;
 }
@@ -507,11 +513,138 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
 
 /* ------ Styling User feedback ------ */
 
+.homePage section:nth-of-type(4) ul{
+  display: flex;
+  gap: 1.5em;
+  width: 95%;
+  margin: auto;
+}
+.homePage section:nth-of-type(4) ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 47%;
+  height: 16em;
+  padding: 1.5em 0;
+  background-color: white;
+  box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
+  border-radius: 10px;
+}
+.homePage section:nth-of-type(4) ul li a:first-of-type{
+  order: 1;
+  width: 80%;
+}
 
+.homePage section:nth-of-type(4) ul li p{
+  order: 2;
+}
+
+.homePage section:nth-of-type(4) ul li a h3, .homePage section:nth-of-type(4) ul li p:last-of-type{
+  color: black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0.5em 0 0 0;
+}
+
+.homePage section:nth-of-type(4) ul li a img:first-of-type{
+  width: 6em;
+  border-radius: 100%;
+}
+
+img[src="images/beoordelingssterren.webp"]{
+  width: 7em;
+  margin: 0.2em 0 0 0;
+}
 
 /* ------ End styling User feedback ------ */
 
 /* ------ End styling main ------ */
+
+/* ------ Styling footer ------ */
+
+footer{
+  background-color: var(--FooterBackgroundColor);
+  color: var(--Textcolorwhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2em 0;
+}
+
+footer nav ul{
+  padding: 0.5em 0 0 0;
+}
+
+footer nav ul li{
+  text-align: center;
+  padding: 0.5em 0 0 0; 
+}
+
+footer nav ul li a{
+  color: var(--Textcolorwhite);
+}
+
+footer > ul:first-of-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+footer > ul:first-of-type li a{
+  color: var(--Textcolorwhite);
+  position: relative;
+}
+footer > ul:first-of-type li a span{
+  font-size: 1.3em;
+  margin: 0 0 0 0.2em;
+  font-weight: bold;
+}
+
+footer > ul:first-of-type li:first-of-type a{
+  padding: 0 2.2em 0 0;
+}
+
+img[src="images/footericons/nederlandsevlag.png"]{
+  position: absolute;
+  top: -0.1em;
+  right: 0;
+}
+
+footer > ul:nth-of-type(2){
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0 0 2em 0;
+}
+
+footer > ul:nth-of-type(2) img{
+  width: 4em;
+  border-radius: 100%;
+}
+
+footer > ul:nth-of-type(3){
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+footer p:first-of-type{
+  opacity: 30%;
+  text-align: center;
+  margin: 1em 0 0.6em 0;
+}
+
+footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-type(3){
+  width: 6.5em;
+  margin: 0.2 0 0 0;
+}
+
+/* ------ End styling footer ------ */
 
 /* ------ Styling other ------ */
 
@@ -539,7 +672,7 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   .navBesturingssysteem ul{
     width: 100%;
     justify-content: space-evenly;
-    font-size: 15px;
+    font-size: 1.15em;
   }
 
   .navBesturingssysteem ul li:not(.navBesturingssysteem ul li:last-of-type){
@@ -573,7 +706,7 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
     justify-content: center;
   }
   .navBesturingssysteem{
-    width: 700px;
+    width: 53.84em;
   }
   header form{
     width: 31em;
