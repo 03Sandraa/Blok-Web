@@ -1,11 +1,13 @@
 /* CSS Document */
 :root{
   --MerkColorOrange: #ff5400;
+  --MainDarkorange: #4f1a00;
   --HeaderBackgroundColor: #000000;
   --Textcolorwhite: white;
   --MenuBackgroundColor: rgba(0, 0, 0, 0.5);
   --MenuBackgroundColorHover: rgba(0, 0, 0, 0.3);
   --BodyBackgroundColor: #eeeeee;
+  --MainColorDarkgrey: #b0b0b0;
   --FooterBackgroundColor: #002c67;
 }
 
@@ -176,12 +178,13 @@ header form button img{
   margin: 1em 0 2em 0;
 }
 
-.navBesturingssysteem ul li{
+.navBesturingssysteem ul li button{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.navBesturingssysteem > ul > li > img:not(img[src="images/headericons/arrow_down.svg"]) {
+.navBesturingssysteem > ul > li > button > img:not(img[src="images/headericons/arrow_down.svg"]) {
   width: 1.69em;
   height: 1.54em;
 }
@@ -190,7 +193,8 @@ img[src="images/headericons/arrow_down.svg"]{
   width: 0.92em;
   margin-left: 0.38em;
 }
-.NavComputer{
+.navBesturingssysteem button{
+  border: none;
   background-color: var(--HeaderBackgroundColor);
 }
 
@@ -373,7 +377,7 @@ img[src="images/headericons/arrow_down.svg"]{
   width: 45%;
   border-radius: 5px;
   align-self: center;
-  margin-top: 1em;
+  margin: 1em auto;
 }
 
 
@@ -489,6 +493,8 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   justify-content: center;
   align-items: center;
   color: #000000;
+  width: 300px;
+  margin: 1em auto;
 }
 
 .homePage section:nth-of-type(3) p:first-of-type{
@@ -507,6 +513,10 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
 .homePage section:nth-of-type(3) img[src="images/trustpilot-logo.svg"]{
   width: 6em;
   margin: 0 0 0 0.4em;
+}
+
+.homePage section:nth-of-type(3) article:nth-of-type(1), .homePage section:nth-of-type(3) article:nth-of-type(2), .homePage section:nth-of-type(3) article:nth-of-type(3){
+  display: none;
 }
 
 /* ------ End styling Trustpilot ------ */
@@ -530,6 +540,11 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
   box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
   border-radius: 10px;
 }
+
+.homePage section:nth-of-type(4) ul li:nth-child(3), .homePage section:nth-of-type(4) ul li:nth-child(4){
+  display: none;
+}
+
 .homePage section:nth-of-type(4) ul li a:first-of-type{
   order: 1;
   width: 80%;
@@ -537,9 +552,10 @@ img[src="images/content/campaign-banner-6149fc348d1fe.jpg"]{
 
 .homePage section:nth-of-type(4) ul li p{
   order: 2;
+  width: 80%;
 }
 
-.homePage section:nth-of-type(4) ul li a h3, .homePage section:nth-of-type(4) ul li p:last-of-type{
+.homePage section:nth-of-type(4) ul li a h3, .homePage section:nth-of-type(4) ul li p{
   color: black;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -559,6 +575,187 @@ img[src="images/beoordelingssterren.webp"]{
 }
 
 /* ------ End styling User feedback ------ */
+
+/* ------ Styling detail pagina ------ */
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail h1{
+  font-size: 1.3em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.detail img[src="images/content/game-rockstar-red-dead-redemption-2-standard-edition-cover.jpg"]{
+  width: 8em;
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+  margin: 0.5em;
+}
+
+.detail section:first-of-type{
+  display: flex;
+  justify-content: center;
+  order: -1;
+  background-image: url("../images/content/game-rockstar-red-dead-redemption-2-standard-edition-cover-blur.jpg");
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+}
+
+.detail section:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(1){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--BodyBackgroundColor);
+  width: 95%;
+  border-radius: 5px;
+  height: 3em;
+  border: 1px solid var(--MainColorDarkgrey);
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(1) p{
+  margin: 0 0 0 0.5em;
+}
+
+.detail img[src="images/vinkje.webp"]{
+  height: 0.8em;
+  margin: 0 0 0 1em;
+  padding: 0 0 0 1em;
+  border-left: 1px solid var(--MainColorDarkgrey);
+}
+
+.detail section:nth-of-type(2) ul{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.detail section:nth-of-type(2) ul:first-of-type{
+  padding: 0 0 1em 0;
+  margin: 1em 0;
+  border-bottom: 1px solid var(--MainColorDarkgrey);
+}
+
+.detail section:nth-of-type(2) ul li{
+  padding: 0.5em 1em;
+  background-color: var(--MainColorDarkgrey);
+  border-radius: 5px;
+}
+
+.detail section:nth-of-type(2) ul li:first-of-type{
+  background-color: var(--HeaderBackgroundColor)
+}
+
+.detail section:nth-of-type(2) ul li a{
+  color: var(--Textcolorwhite);
+}
+
+.detail section:nth-of-type(2) > p:first-of-type{
+  color: var(--MainColorDarkgrey);
+  margin: 2em 0;
+}
+
+.detail section:nth-of-type(2) > p:first-of-type > span{
+  padding-left: 0.5em;
+  border-left: 1px solid var(--MainColorDarkgrey);
+  margin-left: 0.3em;
+}
+
+.detail section:nth-of-type(2) ul:nth-of-type(3) li{
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--MainColorDarkgrey);
+}
+
+.detail section:nth-of-type(2) ul:nth-of-type(3) li a{
+  color: var(--MainColorDarkgrey);
+}
+
+.detail section:nth-of-type(2) > div:first-of-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--MainColorDarkgrey);
+  margin: 2em 0;
+}
+
+.detail section:nth-of-type(2) > div:first-of-type p:nth-of-type(2){
+  padding-left: 0.5em;
+  margin-left: 0.5em;
+  border-left: 1px solid var(--MainColorDarkgrey);
+}
+
+.detail img[src="images/hoticoon.webp"]{
+  width: 0.8em; 
+  margin: 0 0.5em 0 0;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(2){
+  background-color: var(--HeaderBackgroundColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(2) p:first-of-type{
+  color: var(--MainColorDarkgrey);
+  margin: 1em 0;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(2){
+  color: var(--MerkColorOrange);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(2) span{
+  color: var(--Textcolorwhite);
+  font-size: 1.8em;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(2) div{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(2) button:first-of-type{
+  padding: 1.5em;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--MainDarkorange);
+}
+.detail img[src="images/heartfullicon.svg"]{
+  width: 1.5em;
+}
+
+.detail section:nth-of-type(2) article:nth-of-type(2) button:nth-of-type(2){
+  padding: 1.6em 0;
+  width: 80vw;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--MerkColorOrange);
+  color: var(--Textcolorwhite);
+  font-weight: bold;
+}
+
+/* ------ End styling detail pagina ------ */
 
 /* ------ End styling main ------ */
 
@@ -688,6 +885,29 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
   img[src="images/headericons/arrow_down.svg"]{
     opacity: 50%;
   }
+  .NavComputer nav{
+    top: 10.45em;
+  }
+  
+  .NavComputer nav ul:first-of-type{
+    height: 15em;
+  }
+
+  .NavComputer nav ul:first-of-type li{
+    margin: 0;
+  }
+
+  .NavComputer nav ul:first-of-type li a{
+    font-size: 0.8em;
+    margin: 1em 0 0 1em;
+  }
+  .NavComputer nav ul:nth-of-type(2){
+    font-size: 0.8em;
+  }
+  .NavComputer nav ul:nth-of-type(3) li a{
+    font-size: 0.8em;
+    margin-top: 3em;
+  }
 }
 
 @media (min-width: 600px){
@@ -696,6 +916,43 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
   }
   img[src="images/logo7.webp"]{
     width: 10em;
+  }
+  .homePage section:nth-of-type(4) ul li{
+    width: 33%;
+  }
+  .homePage section:nth-of-type(4) ul li:nth-child(3){
+    display: flex;
+  }
+  .NavComputer nav{
+    top: 11em;
+  }
+}
+
+@media (min-width: 650px){
+
+
+  .homePage section:nth-of-type(3){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
+
+  }
+  .homePage section:nth-of-type(3) img:not(img[src="images/trustpilot-stars.svg"], img[src="images/trustpilot-logo.svg"]){
+    height: 2.5em;
+    margin: 0 1.5em 0 0;
+  }
+
+  .homePage section:nth-of-type(3) article p:first-of-type:not(.homePage section:nth-of-type(3) article:nth-of-type(4) p){
+    margin: 0;
+  }
+
+  .homePage section:nth-of-type(3) article p:nth-child(2):not(.homePage section:nth-of-type(3) article:nth-of-type(4) p){
+    color: gray;
+  }
+
+  .homePage section:nth-of-type(3) article:nth-of-type(1), .homePage section:nth-of-type(3) article:nth-of-type(2), .homePage section:nth-of-type(3) article:nth-of-type(3){
+    display: flex;
+    margin: auto;
   }
 }
 
@@ -707,6 +964,9 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
   }
   .navBesturingssysteem{
     width: 53.84em;
+  }
+    .NavComputer nav{
+    top: 8em;
   }
   header form{
     width: 31em;
@@ -729,11 +989,27 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
     grid-template-columns:repeat(auto-fit, minmax(12em, 1fr));
     grid-column-gap: 1.5em;
   }
+
+  .homePage section:nth-of-type(4) ul li{
+    width: 22%;
+  }
+
+  .homePage section:nth-of-type(4) ul li:nth-child(4){
+    display: flex;
+  }
+
 }
 
 @media (min-width: 904px) {
   .homePage section:nth-of-type(2) ol li:last-of-type, .homePage section:nth-of-type(2) ol li:nth-of-type(9){
     display: block;
+  }
+}
+
+@media (min-width: 1024px){
+  .homePage section:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
   }
 }
 
