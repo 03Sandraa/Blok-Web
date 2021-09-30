@@ -1,5 +1,5 @@
 // JavaScript Document
-const buttonHamburgermenuGebruikers = document.querySelector(".hamburger");
+const buttonHamburgermenuGebruikers = document.querySelector(".gebruikersmenu > button");
 const Gebruikersmenu = document.querySelector(".gebruikersmenu ul"); 
 const ButtonNavComputer = document.querySelector(".NavComputer");
 const NavComputer = document.querySelector(".NavComputer nav");
