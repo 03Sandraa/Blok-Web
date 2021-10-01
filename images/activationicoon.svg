@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="228.93541"
+   width="155.82001"
+   data-name="Layer 1"
+   viewBox="0 0 51.940002 76.311803"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="activation3.svg"
+   style="fill:#000000"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>roket</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="770"
+     inkscape:window-height="480"
+     id="namedview14"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.78666667"
+     inkscape:cx="78"
+     inkscape:cy="114.54006"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg12" />
+  <title
+     id="title2">roket</title>
+  <path
+     d="m 30.13,69.901787 c -0.93,1.84 -1.83,3.62 -2.72,5.41 a 1.47,1.47 0 0 1 -1.4,1 1.57,1.57 0 0 1 -1.39,-1 c -1,-1.75 -1.94,-3.58 -3,-5.65 -0.58,0.67 -1.07,1.27 -1.59,1.83 a 1.27,1.27 0 0 1 -1.59,0.28 1.4,1.4 0 0 1 -0.87,-1.38 c 0,-2.13 0,-4.25 0,-6.38 a 1.43,1.43 0 0 1 2.12,-1.34 14.13,14.13 0 0 0 12.56,0 1.44,1.44 0 0 1 2.14,1.37 c 0,2.1 0,4.2 0,6.31 a 1.4,1.4 0 0 1 -0.89,1.43 1.38,1.38 0 0 1 -1.5,-0.32 7.71,7.71 0 0 0 -1.87,-1.56 z"
+     id="path4"
+     style="fill:#ff5400;fill-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 51.94,58.881787 a 22.55,22.55 0 0 1 -1,6.53 c -0.19,0.79 -0.58,1.55 -1.52,1.45 -0.94,-0.1 -1,-0.77 -1.16,-1.55 a 10.27,10.27 0 0 0 -7.79,-8.67 c -1.53,-0.44 -1.76,-1.19 -1.14,-2.56 a 60.11,60.11 0 0 0 3.67,-10.95 c 0.5,-2.14 1.47,-2.41 3,-0.76 4.22,4.49 5.94,9.92 5.94,16.51 z"
+     id="path6"
+     style="fill:#ff5400;fill-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 0,59.451787 c 0.11,-6.95 1.6,-12.19 5.44,-16.58 0.65,-0.74 1.23,-1.74 2.36,-1.48 1.13,0.26 1.09,1.43 1.32,2.35 a 64.5,64.5 0 0 0 3.53,10.39 c 0.58,1.35 0.43,2 -1,2.43 -4.44,1.29 -7.18,4.18 -7.93,8.8 a 1.41,1.41 0 0 1 -1.23,1.48 1.44,1.44 0 0 1 -1.4,-1.35 24,24 0 0 1 -1.09,-6.04 z"
+     id="path8"
+     style="fill:#ff5400;fill-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 37.88,14.061787 A 38.18,38.18 0 0 0 27.44,0.79178689 c -1.38,-1.11 -2,-1 -3.19,0 A 41,41 0 0 0 12.53,17.901787 c -4.45,12.84 -2.47,25.23 2.96,37.23 a 2,2 0 0 0 2.16,1.25 c 2.79,0 5.58,0 8.37,0 2.79,0 5.58,0 8.37,0 a 2.09,2.09 0 0 0 2.2,-1.46 64.84,64.84 0 0 0 3,-7.85 c 3.33,-11.17 3.47,-22.26 -1.71,-33.01 z m -12,1.38 a 6.77,6.77 0 0 1 6.92,6.8 7.54,7.54 0 0 1 -7.25,7.34 c -3,0 -6.34,-3.77 -6.38,-7.12 a 6.77,6.77 0 0 1 6.73,-7.01 z"
+     id="path10"
+     style="fill:#ff5400;fill-opacity:1"
+     inkscape:connector-curvature="0" />
+</svg>
