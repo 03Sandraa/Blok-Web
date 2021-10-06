@@ -209,6 +209,16 @@ Tegen het einde vond ik mijn code soms wat te ingewikkeld geworden. En dat was v
 
 <img src="images/Screenshotresultaatweek5.jpg" width="375px" alt="Schermafbeelding week 5">
 
+HTML
+<img src="images/HTMLindexweek5.png" width="375px" alt="HTML week 5">
+<img src="images/HTMLdetailweek5.png" width="375px" alt="HTML week 5">
+
+CSS
+<img src="images/CSSweek5.png" width="375px" alt="css week 5">
+
+js
+<img src="images/jsweek5.png" width="375px" alt="css week 5">
+
 </details>
 
 
