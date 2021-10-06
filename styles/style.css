@@ -59,6 +59,10 @@ img[src="images/logo7.webp"]{
 }
 
 .gebruikersmenu button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   background-color: var(--HeaderBackgroundColor);
   border: none;
@@ -69,6 +73,30 @@ img[src="images/logo7.webp"]{
   top: 0.4em;
   right: 0.8em;
 }
+
+.gebruikersmenu button img{
+  width: 2.5em;
+  height: 0.2em;
+  margin: 0.3em;
+  transition-duration: 1s;
+}
+
+.gebruikersmenu button img:nth-of-type(1).closed{
+  animation: hamburgerCloseBoven 2s both;
+}
+
+.gebruikersmenu button img:nth-of-type(3).closed{
+  animation: hamburgerCloseOnder 2s both;
+}
+
+.gebruikersmenu button img:nth-of-type(1).open{
+  animation: hamburgerOpenBoven 2s both;
+}
+
+.gebruikersmenu button img:nth-of-type(3).open{
+  animation: hamburgerOpenOnder 2s both;
+}
+
 
 .gebruikersmenu ul{
   background-color: var(--MenuBackgroundColor);
@@ -115,14 +143,6 @@ img[src="images/avatar.png"]{
   margin-left: calc(50% - 1.9em);
 }
 
-img[src="images/hamburgermenu.svg"]{
-  position: fixed;
-  z-index: 15;
-  top: 1.5em;
-  right: 1.7em;
-  width: 2em;
-}
-
 /* ------ End styling gebruikersmenu ------ */
 
 /* ------ Styling search bar ------ */
@@ -162,7 +182,7 @@ header form button{
   border-radius: 100%;
 }
 
-header form button img{
+header button img{
   width: 1.4em;
   height: 1.4em;
 }
@@ -601,6 +621,7 @@ img[src="images/beoordelingssterren.webp"]{
   border-radius: 5px;
   backdrop-filter: blur(20px);
   margin: 0.5em;
+  box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
 }
 
 .detail section:first-of-type{
@@ -619,6 +640,7 @@ img[src="images/beoordelingssterren.webp"]{
   align-items: center;
   width: 100%;
   background-color: white;
+  box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
 }
 
 .detail section:nth-of-type(2) > div:nth-of-type(1){
@@ -769,7 +791,7 @@ img[src="images/beoordelingssterren.webp"]{
 
 /* ------ Styling verdere informatie ------ */
 
-.detail section:nth-of-type(3) ul:first-of-type{
+.detail section:nth-of-type(3) > ul:first-of-type{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -778,7 +800,7 @@ img[src="images/beoordelingssterren.webp"]{
 }
 
 
-.detail section:nth-of-type(3) ul:first-of-type li a{
+.detail section:nth-of-type(3) > ul:first-of-type li a{
   background-color: white;
   padding: 1em;
   display: flex;
@@ -793,7 +815,15 @@ img[src="images/beoordelingssterren.webp"]{
   background-color: var(--HeaderBackgroundColor);
 } 
 
-.detail section:nth-of-type(3) ul:first-of-type li:nth-of-type(3) a span{
+.detail section:nth-of-type(3) ul:first-of-type li:nth-of-type(2) span{
+  display: none;
+}
+
+.detail section:nth-of-type(3) ul:first-of-type li:nth-of-type(3) a span:first-of-type{
+  display: none;
+}
+
+.detail section:nth-of-type(3) ul:first-of-type li:nth-of-type(3) a span:nth-of-type(2){
   background-color: green;
   padding: 0.5em;
   border-radius: 100%;
@@ -806,6 +836,90 @@ img[src="images/beoordelingssterren.webp"]{
 
 .detail section:nth-of-type(3) ul:first-of-type img[src="images/activationicoon.svg"]{
   height: 2em;
+}
+
+.detail section:nth-of-type(3) article > img:first-of-type{
+  width: 120%;
+  height: 80%;
+  transform: translate(-2em, -2em);
+}
+
+.detail section:nth-of-type(3) article ul:first-of-type{
+  display: flex;
+  gap: 0.4em;
+}
+.detail section:nth-of-type(3) article ul:first-of-type img{
+  width: 100%;
+  border-radius: 5px;
+  margin: -1em 0 1em 0;
+}
+
+.detail section:nth-of-type(3) article{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2em 1.5em ;
+  border-radius: 10px;
+  box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
+  overflow: hidden;
+}
+
+.detail section:nth-of-type(3) article h2{
+  color: var(--MerkColorOrange);
+  margin: 2em 0 0.5em 0;
+}
+
+.detail section:nth-of-type(3) article p span{
+  display: inline-block;
+  margin: 0 0 1.5em 0;
+}
+
+.detail section:nth-of-type(3) article h3{
+  margin: 2em 0;
+}
+
+.detail section:nth-of-type(3) article ul:nth-of-type(2) li{
+margin: 0 0 0 2em;
+}
+
+/* Geleende code van https://www.w3schools.com/howto/howto_css_bullet_color.asp */
+.detail section:nth-of-type(3) article ul:nth-of-type(2) li::before{
+  content: "\2022";
+  display: inline-block;
+  font-weight: bold;
+  color: var(--MerkColorOrange);
+  margin: 0 0 0 -1em;
+  width: 1em;
+}
+/* Einde van het lenen */
+
+.detail section:nth-of-type(3) article p:nth-of-type(4){
+  margin: 0.5em 0 2em 0;
+}
+
+.detail section:nth-of-type(3) article h3:nth-of-type(3), .detail section:nth-of-type(3) article h3:nth-of-type(4), .detail section:nth-of-type(3) article h3:nth-of-type(5){
+  font-size: 1em;
+  color: var(--MerkColorOrange);
+  margin: 1em 0;
+}
+
+.detail section:nth-of-type(3) article h3 span{
+  color: #000000;
+  margin: 0 0 0 0.5em;
+  font-weight: normal;
+}
+
+.detail section:nth-of-type(3) article ul span{
+  margin: 0 0 0 1em;
+}
+
+.detail section:nth-of-type(3) article ul li:first-of-type span{
+  margin: 0 0 0 1.5em;
+}
+
+.detail section:nth-of-type(3) article p:last-of-type{
+  margin: 1em 0 0 0;
+  text-align: center;
 }
 
 /* ------ End styling verdere informatie ------ */
@@ -893,7 +1007,7 @@ footer p:first-of-type{
 
 footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-type(3){
   width: 6.5em;
-  margin: 0.2 0 0 0;
+  margin: 0.2em 0 0 0;
 }
 
 /* ------ End styling footer ------ */
@@ -905,6 +1019,50 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
 }
 
 /* ------ Styling other ------ */
+
+/* ------ Animatie ------ */
+
+@keyframes hamburgerOpenBoven{
+  0% { 
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg) translate(0.7em, 0.5em);
+  }
+}
+
+@keyframes hamburgerOpenOnder{
+  0% { 
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(0.5em, -0.5em);
+  }
+}
+
+@keyframes hamburgerCloseBoven{
+  0% { 
+    transform: rotate(45deg) translate(0.7em, 0.5em);
+  }
+
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+
+@keyframes hamburgerCloseOnder{
+  0% { 
+    transform: rotate(-45deg) translate(0.5em, -0.5em);
+  }
+
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+
+/* ------ End animatie ------ */
 
 /* ------ Responsive ------ */
 
@@ -918,6 +1076,10 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
   .detail section:nth-of-type(2) div:nth-of-type(1) img:nth-of-type(3){
     border-left: 1px solid var(--MainColorDarkgrey);
     padding: 0 0 0 1em;
+  }
+
+  .detail section:nth-of-type(3) ul:first-of-type li a{
+    padding: 1em 1.5em;
   }
 }
 
@@ -970,6 +1132,12 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
     font-size: 0.8em;
     margin-top: 3em;
   }
+
+  .detail section:nth-of-type(3) ul:first-of-type li:nth-of-type(4) span{
+    display: flex;
+    color: #000000;
+    margin: 0 0.5em 0 0;
+  }
 }
 
 @media (min-width: 600px){
@@ -987,6 +1155,11 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
   }
   .NavComputer nav{
     top: 11em;
+  }
+  .detail section:nth-of-type(3) ul:first-of-type li:nth-of-type(3) a span:first-of-type{
+    display: flex;
+    color: #000;
+    margin: 0 0.5em 0 0;
   }
 }
 
@@ -1038,6 +1211,11 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
     margin: 1.2em 5em 1.2em 3em;
     justify-self: flex-start;
   }
+  .detail section:nth-of-type(3) ul:first-of-type li:nth-of-type(2) span{
+    display: flex;
+    color: #000;
+    margin: 0 0.5em 0 0;
+  }
 }
 
 @media (min-width: 750px) {
@@ -1046,22 +1224,29 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
   }
 
   .detail{
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 70%;
     align-items: flex-start;
   }
   .detail section:nth-of-type(1){
     background-image: none;
-    width: 30%;
   }
   .detail section:nth-of-type(1) img{
     width: 90%;
+    margin: 1.5em 0;
     border-radius: 10px;
-    margin: 1em 0 0 0;
   }
+
   .detail section:nth-of-type(2){
-    margin: 1em 1em 0 0;
+    margin: 1.5em 0 0 0;
+    width: 98%;
     border-radius: 10px;
-    width: 70%;
+  }
+
+  .detail section:nth-of-type(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0 1em;
   }
 
 }
@@ -1093,6 +1278,15 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
     display: flex;
     justify-content: space-between;
   }
+  body{
+    background-image: url("../images/content/Achtergrond1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 135em;
+    background-color: #1a0c03;
+  }
 }
 
 /* ------ End responsive ------ */
+

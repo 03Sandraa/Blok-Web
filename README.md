@@ -171,26 +171,26 @@ Het lijkt me dan ook belangrijk om de visuele elementen duidelijk te maken, zowe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+<img src="images/Screenshotresultaatweek4-1.jpg" width="375px" alt="Schermafbeelding week 4">
+<img src="images/Screenshotresultaatweek4-4.jpg" width="375px" alt="Schermafbeelding week 4">
+<img src="images/Screenshotresultaatweek4-2.jpg" width="375px" alt="Schermafbeelding week 4">
+<img src="images/Screenshotresultaatweek4-3.jpg" width="375px" alt="Schermafbeelding week 4">
 
-### Agenda voor meeting
-samen met je groepje opstellen
+HTML
+<img src="images/HTMLindexweek4.jpg" width="375px" alt="HTML week 4">
+<img src="images/HTMLdetailweek4.jpg" width="375px" alt="HTML week 4">
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+CSS
+<img src="images/CSSweek4.jpg" width="375px" alt="css week 4">
 
+js
+<img src="images/jsweek4.jpg" width="375px" alt="css week 4">
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Uit het gesprek kwam dat mijn code er goed en op niveau uit ziet. Ook kreeg ik de vraag wat ik nog wilde verbeteren en toe wilde voegen.
+Ik wil nog wat verder kijken naar de responsiveness en ik wil graag nog een animatie toevoegen.
 
 </details>
 
@@ -201,10 +201,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Eindgesprek (week 5)
 
 <details>
-<summary>uitwerken voor eindgesprek</summary>
+
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben zeer tevrede met mijn eindproduct, ik heb er dan ook best wel veel tijd ingestoken. 
+Tegen het einde vond ik mijn code soms wat te ingewikkeld geworden. En dat was vooral toen ik dingen wilde veranderen en mijn hele code werkte niet meer, best vervelend.
+
 
 ### Screenshot(s)
 
@@ -229,5 +231,10 @@ hier screenshot(s) van je eindresultaat
 7. https://cssgenerator.org/box-shadow-css-generator.html
 8. https://stackoverflow.com/questions/16201948/how-to-exclude-particular-class-name-in-css-selector
 9. https://ezgif.com/crop
+10. https://css-tricks.com/snippets/css/complete-guide-grid/
+11. https://www.w3schools.com/howto/howto_css_bullet_color.asp
+12. https://www.w3schools.com/jsref/prop_html_style.asp
+13. https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+
 
 </details>
