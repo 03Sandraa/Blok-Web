@@ -78,23 +78,23 @@ img[src="images/logo7.webp"]{
   width: 2.5em;
   height: 0.2em;
   margin: 0.3em;
-  transition-duration: 1s;
+  transition-duration: 500ms;
 }
 
 .gebruikersmenu button img:nth-of-type(1).closed{
-  animation: hamburgerCloseBoven 2s both;
+  animation: hamburgerCloseBoven 0.7s both;
 }
 
 .gebruikersmenu button img:nth-of-type(3).closed{
-  animation: hamburgerCloseOnder 2s both;
+  animation: hamburgerCloseOnder 0.7s both;
 }
 
 .gebruikersmenu button img:nth-of-type(1).open{
-  animation: hamburgerOpenBoven 2s both;
+  animation: hamburgerOpenBoven 1s both;
 }
 
 .gebruikersmenu button img:nth-of-type(3).open{
-  animation: hamburgerOpenOnder 2s both;
+  animation: hamburgerOpenOnder 1s both;
 }
 
 
@@ -859,6 +859,7 @@ img[src="images/beoordelingssterren.webp"]{
   flex-direction: column;
   background-color: white;
   padding: 2em 1.5em ;
+  margin: 0 0 1em 0;
   border-radius: 10px;
   box-shadow: 1px 1px 25px -20px rgba(0,0,0,0.45);
   overflow: hidden;
@@ -1285,6 +1286,11 @@ footer > img:nth-of-type(1), footer > img:nth-of-type(2), footer > img:nth-of-ty
     background-attachment: fixed;
     background-size: 135em;
     background-color: #1a0c03;
+  }
+  footer{
+    background-color: #1a0c03;
+    padding: 2em 0 2em 0;
+
   }
 }
 
