@@ -211,7 +211,7 @@ Tegen het einde vond ik mijn code soms wat te ingewikkeld geworden. En dat was v
 
 HTML
 <img src="images/HTMLindexweek5.png" width="375px" alt="HTML week 5">
-<img src="images/HTMLdetailweek5.png" width="375px" alt="HTML week 5">
+<img src="images/HTMldetailweek5.png" width="375px" alt="HTML week 5">
 
 CSS
 <img src="images/CSSweek5.png" width="375px" alt="css week 5">
