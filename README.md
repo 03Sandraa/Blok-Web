@@ -111,7 +111,6 @@ Punten die ik voor mezelf had
 
 ### Stand van zaken
 
-<img src="images/Schermafbeeldingresultaatweek3.jpg" width="375px" alt="Schermafbeelding week 3">
 <img src="images/code-snapshot-html-week3.jpg" width="375px" alt="Schermafbeelding week 3">
 <img src="images/code-snapshot-css-week3-1.jpg" width="375px" alt="Schermafbeelding week 3">
 <img src="images/code-snapshot-css-week3-2.jpg" width="375px" alt="Schermafbeelding week 3">
