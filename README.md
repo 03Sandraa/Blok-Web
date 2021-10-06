@@ -207,7 +207,7 @@ Tegen het einde vond ik mijn code soms wat te ingewikkeld geworden. En dat was v
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/Screenshotresultaatweek5.jpg" width="375px" alt="Schermafbeelding week 5">
 
 </details>
 
