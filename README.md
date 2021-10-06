@@ -173,19 +173,16 @@ Het lijkt me dan ook belangrijk om de visuele elementen duidelijk te maken, zowe
 ### Stand van zaken
 
 <img src="images/Screenshotresultaatweek4-1.jpg" width="375px" alt="Schermafbeelding week 4">
-<img src="images/Screenshotresultaatweek4-4.jpg" width="375px" alt="Schermafbeelding week 4">
-<img src="images/Screenshotresultaatweek4-2.jpg" width="375px" alt="Schermafbeelding week 4">
-<img src="images/Screenshotresultaatweek4-3.jpg" width="375px" alt="Schermafbeelding week 4">
 
 HTML
-<img src="images/HTMLindexweek4.jpg" width="375px" alt="HTML week 4">
-<img src="images/HTMLdetailweek4.jpg" width="375px" alt="HTML week 4">
+<img src="images/HTMLindexweek4.png" width="375px" alt="HTML week 4">
+<img src="images/HTMLdetailweek4.png" width="375px" alt="HTML week 4">
 
 CSS
-<img src="images/CSSweek4.jpg" width="375px" alt="css week 4">
+<img src="images/CSSweek4.png" width="375px" alt="css week 4">
 
 js
-<img src="images/jsweek4.jpg" width="375px" alt="css week 4">
+<img src="images/jsweek4.png" width="375px" alt="css week 4">
 
 ### Verslag van meeting
 
@@ -235,6 +232,8 @@ hier screenshot(s) van je eindresultaat
 11. https://www.w3schools.com/howto/howto_css_bullet_color.asp
 12. https://www.w3schools.com/jsref/prop_html_style.asp
 13. https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+14. https://cssgradient.io/
+15. https://stackoverflow.com/questions/4280886/can-a-background-image-be-larger-than-the-div-itself
 
 
 </details>
