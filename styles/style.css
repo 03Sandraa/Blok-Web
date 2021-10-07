@@ -734,6 +734,7 @@ img[src="images/beoordelingssterren.webp"] {
   border-radius: 5px;
   height: 3em;
   border: 1px solid var(--MainColorDarkgreyBorder);
+  color: var(--MaintextColor);
 }
 
 .detail section:nth-of-type(2) div:nth-of-type(1) p {
