@@ -159,6 +159,7 @@ img[src="images/logo7.webp"] {
 .gebruikersmenu ul li:nth-of-type(8){
   padding: 0.5em 0.5em 0.5em 1em;
   color: var(--Textcolorwhite);
+  cursor: pointer;
 }
 .gebruikersmenu ul li:nth-of-type(8):hover{
   background-color: var(--MenuBackgroundColorHover);
