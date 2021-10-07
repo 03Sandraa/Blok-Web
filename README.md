@@ -111,6 +111,7 @@ Punten die ik voor mezelf had
 
 ### Stand van zaken
 
+<img src="images/Schermafbeeldingresultaatweek3.jpg" width="375px" alt="Schermafbeelding week 3">
 <img src="images/code-snapshot-html-week3.jpg" width="375px" alt="Schermafbeelding week 3">
 <img src="images/code-snapshot-css-week3-1.jpg" width="375px" alt="Schermafbeelding week 3">
 <img src="images/code-snapshot-css-week3-2.jpg" width="375px" alt="Schermafbeelding week 3">
@@ -210,7 +211,7 @@ Tegen het einde vond ik mijn code soms wat te ingewikkeld geworden. En dat was v
 
 HTML
 <img src="images/HTMLindexweek5.png" width="375px" alt="HTML week 5">
-<img src="images/HTMldetailweek5.png" width="375px" alt="HTML week 5">
+<img src="images/HTMLdetailweek5.png" width="375px" alt="HTML week 5">
 
 CSS
 <img src="images/CSSweek5.png" width="375px" alt="css week 5">

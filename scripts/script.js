@@ -1,8 +1,6 @@
 // JavaScript Document
-let buttonHamburgermenuGebruikers = document.querySelector(".gebruikersmenu > button");
-const HamburgermenuStreep1 = document.querySelector(".gebruikersmenu > button img:first-of-type");
-const HamburgermenuStreep2 = document.querySelector(".gebruikersmenu > button img:nth-of-type(2)");
-const HamburgermenuStreep3 = document.querySelector(".gebruikersmenu > button img:nth-of-type(3)");
+const Body = document.querySelector("body");
+const buttonHamburgermenuGebruikers = document.querySelector(".gebruikersmenu > button");
 const Gebruikersmenu = document.querySelector(".gebruikersmenu ul"); 
 const ButtonNavComputer = document.querySelector(".NavComputer");
 const NavComputer = document.querySelector(".NavComputer nav");
@@ -16,31 +14,23 @@ const NavNintendo = document.querySelector(".NavNintendo nav");
 buttonHamburgermenuGebruikers.addEventListener("click",openGebruikersmenu);
 ButtonNavComputer.addEventListener("click",openPCmenu);
 
-buttonHamburgermenuGebruikers = 0;
+HamburgermenuStatus = 0;
 
 function openGebruikersmenu(){
-    if (buttonHamburgermenuGebruikers == 0){
+    if (HamburgermenuStatus == 0){
         Gebruikersmenu.classList.remove("hidden");
-        HamburgermenuStreep2.style.opacity = "0";
-        HamburgermenuStreep3.classList.add("open");
-        HamburgermenuStreep1.classList.add("open");
-        buttonHamburgermenuGebruikers = 1;
-    } else if (buttonHamburgermenuGebruikers == 1){
+        buttonHamburgermenuGebruikers.classList.add("open");
+        HamburgermenuStatus = 1;
+    } else if (HamburgermenuStatus == 1){
         Gebruikersmenu.classList.add("hidden");
-        HamburgermenuStreep2.style.opacity = "1";
-        HamburgermenuStreep3.classList.remove("open");
-        HamburgermenuStreep3.classList.add("closed");
-        HamburgermenuStreep1.classList.remove("open");
-        HamburgermenuStreep1.classList.add("closed");
-        buttonHamburgermenuGebruikers = 2;
+        buttonHamburgermenuGebruikers.classList.remove("open");
+        buttonHamburgermenuGebruikers.classList.add("closed");
+        HamburgermenuStatus = 2;
     } else {
         Gebruikersmenu.classList.remove("hidden");
-        HamburgermenuStreep2.style.opacity = "0";
-        HamburgermenuStreep3.classList.add("open");
-        HamburgermenuStreep3.classList.remove("closed");
-        HamburgermenuStreep1.classList.add("open");
-        HamburgermenuStreep1.classList.remove("closed");
-        buttonHamburgermenuGebruikers = 1;
+        buttonHamburgermenuGebruikers.classList.add("open");
+        buttonHamburgermenuGebruikers.classList.remove("closed");
+        HamburgermenuStatus = 1;
     }
 };
 
@@ -48,6 +38,13 @@ function openPCmenu(){
     NavComputer.classList.toggle("hidden");
 }
 
+
+const ButtonDarkmode = document.querySelector(".gebruikersmenu ul li:nth-of-type(8)");
+ButtonDarkmode.addEventListener("click",darkmode);
+
+function darkmode(){
+    Body.classList.toggle("darkmode");
+}
 
 
 const SpelafbeeldingDisplay = document.querySelector(".detail section:nth-of-type(3) article > img:first-of-type");
